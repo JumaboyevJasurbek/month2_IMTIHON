@@ -1,0 +1,185 @@
+.header {
+    &__logo {
+        display: flex;
+    }
+    
+    &__list {
+        margin: 0;
+        margin-top: 52px;
+        margin-bottom: 25px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__item {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 150%;
+        
+        &__link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #343434;
+            &:hover {
+                color: #FF9619;
+                transition: all 0.3s ease;
+            }
+        }
+        &__tel {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            
+            &--number {
+                display: none;
+            }
+            
+            &--span {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 150%; 
+                color: #343434;
+            }
+        }
+        
+        &__lang {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            &::after {
+                content: "";
+                width: 12px;
+                height: 8px;
+                margin-left: 6px;
+                background-image: url(./../../../img/header-arrow.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            &--select {
+                border: none;
+                outline: none;
+                color: rgba(52, 52, 52, 0.7);
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 150%;
+                appearance: none;
+            }
+            
+            &--option {
+                display: flex;
+            }
+        }
+    }
+    
+    &__nav {
+        
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        
+        &__item {
+            
+            &--link {
+                text-decoration: none;
+            }
+            
+            &--heading {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 150%;
+                display: flex;
+                justify-content: center;
+                text-transform: uppercase;
+                color: #343434;
+                margin: 6px auto 0;
+                
+                &__large {
+                    max-width: 111px;
+                }
+            }
+        }
+    }
+}
+
+.header-bottom {
+    margin-top: 63px;
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    &__model {
+        display: flex;
+        align-items: center;
+        &::after {
+            content: "";
+            width: 13px;
+            height: 8px;
+            margin-left: 4px;
+            background-image: url(./../../../img/header-arrow.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    
+    &__select {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 110%;
+        outline: none;
+        border: none;
+        appearance: none;
+        background-color: transparent;
+        color: #343434;
+    }
+    
+    &__right-section {
+            display: flex;
+    }
+    
+    
+    &__button {
+        margin-top: 5px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__form {
+        margin-top: 5px;
+        margin-left: 43px;
+        color: #D1D1D1;
+    }
+    
+    &__search {
+        background-color: transparent;
+    }
+    
+    &__input {
+        border: none;
+    }
+}
