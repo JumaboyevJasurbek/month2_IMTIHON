@@ -730,14 +730,17 @@ img {
   margin-top: 5px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header-bottom__button-mini {
   display: none;
+  cursor: pointer;
 }
 
 .header-bottom__button-mini3 {
   display: none;
+  cursor: pointer;
 }
 
 .header-bottom__form {
@@ -1009,6 +1012,7 @@ img {
   line-height: 110%;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .product__number:nth-child(odd) {
@@ -1362,6 +1366,7 @@ img {
   border: 1px solid #FF9619;
   color: #ffffff;
   padding: 8px 11px;
+  cursor: pointer;
 }
 
 .footer__right--item__img {
