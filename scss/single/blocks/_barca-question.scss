@@ -1,0 +1,147 @@
+.question {
+    background: #A9C2BE;
+    margin-top: 70px;
+    margin-bottom: 250px;
+    
+    &__img {
+        position: relative;
+        width: 670px;
+        height: 558px;  
+        margin: 0;
+        padding: 0;
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__section {
+        width: 470px;
+        left: -70px;
+        position: relative;
+        padding: 31px 50px 17px 50px;
+        background-color: #ffffff;
+        
+        &__circle {
+            position: absolute;
+            z-index: 10;
+            left: -70px;
+            top: -15px;
+        }
+        
+        &__span {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FF9619;
+        }
+        
+        &__heading {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 33px;
+            color: #343434;
+            text-transform: none;
+        }
+        
+        &__form {
+            font-style: normal;
+            font-weight: 400;
+            // font-size: 14px;
+            // line-height: 16px;
+            
+        }
+        
+        &__input {
+            max-width: 371px;
+            padding-top: 25px;
+            padding-bottom: 5px;
+            color: #343434;
+            opacity: 0.5;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #D1D1D1;
+            &:first-child {
+                padding-top: 20px;
+            }
+        }
+        
+        &__check {
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__text {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #343434;
+            opacity: 0.5;
+        }
+        
+        &__checkbox {
+            margin-top: 18px;
+        }
+        
+        &__button {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            margin: 0 auto;
+            margin-top: 18px;
+            display: flex;
+            padding: 14px 20px;
+            color: #ffffff;
+            background-color: #FF9619;
+            border: none;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 376px) {
+    .question {
+        
+        &__img {
+            display: none;
+        }
+        
+        &__wrapper {
+            padding-top: 56px;
+            padding-bottom: 57px;
+            max-width: 340px;
+            padding:0 auto;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &__section {
+            display: inline-block;
+            left: 0 ;
+            
+            &__circle {
+                display: none;
+            }
+            
+            &__heading {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+        
+    }
+}

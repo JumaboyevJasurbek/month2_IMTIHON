@@ -1,0 +1,118 @@
+.barca {
+    
+    &__img {
+        max-width: 732px;
+        max-height: 380px;
+    }
+    
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        
+        &__heading {
+            margin: 0;
+            margin-bottom: 30px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 150%;
+            align-items: center;
+            text-transform: uppercase;
+            color: #343434;
+            
+            &--small {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #343434;
+            }
+        }
+        
+        &__text {
+            max-width: 371px;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 150%;
+            text-transform: capitalize;
+        }
+        
+        &__price {
+            margin-bottom: 30px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            text-transform: uppercase;
+            color: #FF9619;
+            display: block;
+        }
+        
+        &__button {
+            margin-bottom: 184px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 150%;
+            border: none;
+            background: #FF9619;
+            padding: 16px 13px;
+            color: #ffffff;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 376px) {
+    .barca {
+        
+        &__img {
+            max-width: 340px;
+            height: 224px;
+        }
+        
+        &__section {
+            display: inline-block;
+            
+            &__heading {
+                font-size: 20px;
+                font-size: 20px;
+                line-height: 150%;
+                &--small {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+            
+            
+            &__text {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 150%
+            }
+            
+            &__button {
+                margin: 0 auto;
+                margin-bottom: 184px;
+                padding: 13px 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+            }
+            
+        }
+    }
+}

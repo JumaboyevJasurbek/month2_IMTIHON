@@ -1,0 +1,62 @@
+.download {
+    &__section {
+        margin-top: 200px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        list-style: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        color: #343434;
+    }
+    
+    
+    &__button {
+        height: 130px;
+        border: 1px solid #FF9619;
+        background-color: transparent;
+        padding: 40px 70px;
+        cursor: pointer;
+    }
+}
+
+
+
+@media only screen and (max-width: 376px) {
+    .download {
+        &__section {
+        }
+        &__list {
+            padding: 0;
+            max-width: 337px;
+            flex-wrap: wrap;
+            height: 47px;
+            display: flex;
+            justify-content: center;
+        }
+        &__item {
+            max-width: 166px;
+            height: 76px;
+        }
+
+        &__button {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            height: 77px;
+            padding: 10px 6px;
+        }
+    }
+}

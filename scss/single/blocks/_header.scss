@@ -1,0 +1,136 @@
+.header {
+    &__logo {
+        display: flex;
+    }
+    
+    &__list {
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 58px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__item {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 150%;
+        
+        &__link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #343434;
+            &:hover {
+                color: #FF9619;
+                transition: all 0.3s ease;
+            }
+        }
+        &__tel {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            
+            &--number {
+                display: none;
+            }
+            
+            &--span {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 150%; 
+                color: #343434;
+            }
+        }
+        
+        &__lang {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            &::after {
+                content: "";
+                width: 12px;
+                height: 8px;
+                margin-left: 6px;
+                background-image: url(./../../../img/header-arrow.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            &--select {
+                border: none;
+                outline: none;
+                color: rgba(52, 52, 52, 0.7);
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 150%;
+                appearance: none;
+            }
+            
+            &--option {
+                display: flex;
+            }
+        }
+    }
+    
+    &__item1 {
+        display: none;
+    }
+    
+    &__burger {
+        display: none;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 376px) {
+    .header {
+
+        &__logo {
+            width: 111px;
+            height: 43px;
+        }
+
+        &__list {
+            margin-top: 14px;
+        }
+        
+        &__item {
+            &__tel {
+                &--number {
+                    display: inline-block;
+                }
+                &--span {
+                    display: none;
+                }
+            }
+            
+        }
+        
+        &__item1 {
+            order: 1;
+            display: flex;
+        }
+        
+        
+        &__item-none {
+            display: none;
+            
+        }
+
+        &__burger {
+            display: flex;
+        }
+
+    }
+}
