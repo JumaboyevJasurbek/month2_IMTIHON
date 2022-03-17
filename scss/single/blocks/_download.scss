@@ -20,12 +20,14 @@
         color: #343434;
     }
     
+    &__item {
+        height: 130px;
+    }
     
     &__button {
-        height: 130px;
         border: 1px solid #FF9619;
         background-color: transparent;
-        padding: 40px 70px;
+        padding: 35px 75px;
         cursor: pointer;
     }
 }

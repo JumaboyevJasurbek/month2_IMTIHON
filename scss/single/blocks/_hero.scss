@@ -23,10 +23,16 @@
             background-color: #F2F3F5;
             border: 1px solid rgba(52, 52, 52, 0.2);
             margin-bottom: 48px;
+            cursor: pointer;
 
-            &--active {
+            &:hover {
                 background: #ffffff;
                 border-bottom: none;
+            }
+
+            &--active {
+                border-bottom: none;
+                background: #ffffff;
             }
         }
     }
@@ -68,6 +74,7 @@
             margin: 0 auto;
             margin-right: 0;
             margin-bottom: -55px;
+            padding: 10px 10px;
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -80,6 +87,7 @@
             color: #FFFFFF;
             background-color: #FF9619;
             border: none;
+            cursor: pointer;
 
         }
     }

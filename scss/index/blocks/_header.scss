@@ -1,7 +1,17 @@
 .header {
+
+    &__desktop {
+        display: none;
+    }
+
+    &__close-btn {
+        display: none;
+    }
+
     &__logo {
         display: flex;
     }
+
     
     &__list {
         margin: 0;
@@ -206,10 +216,62 @@
         padding: 0;
         border: none;
     }
+
 }
 
 @media only screen and (max-width: 376px) {
     .header {
+        
+        &__desktop {
+            display: flex;
+            width: 239px;
+            height: 667px;
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            right: -40px;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            
+            &__list {
+                padding: 28px 31px;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                justify-content: space-between;
+            }
+
+            &__item {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 135%;
+            }
+
+        }
+
+        &__close-btn {
+            display: flex;
+            position: absolute;
+            background-color: transparent;
+            right: 20px;
+            top: 20px;
+            max-width: 100px;
+            height: 20px;
+            border: none;
+        }
+
+        &__close-img {
+            width: 16px;
+            height: 15px;
+        }
+
+
+
+
+
         &__logo {
             width: 111px;
             height: 43px;
@@ -246,6 +308,8 @@
         }
         
         &__burger {
+            border: none;
+            background-color: transparent;
             display: flex;
         }
         
