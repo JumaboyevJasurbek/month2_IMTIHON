@@ -1257,6 +1257,7 @@ img {
 }
 
 .footer__logo {
+  width: 170px;
   margin: 0;
   margin-right: 100px;
   padding: 0;
