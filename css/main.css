@@ -508,10 +508,6 @@ img {
   display: none;
 }
 
-.header__close-btn {
-  display: none;
-}
-
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -789,6 +785,7 @@ img {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    display: none;
   }
   .header__desktop__list {
     padding: 28px 31px;

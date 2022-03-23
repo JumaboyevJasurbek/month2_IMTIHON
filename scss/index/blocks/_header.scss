@@ -5,7 +5,6 @@
     }
 
     &__close-btn {
-        display: none;
     }
 
     &__logo {
@@ -236,6 +235,7 @@
             margin: 0;
             padding: 0;
             background-color: #ffffff;
+            display: none;
             
             &__list {
                 padding: 28px 31px;
